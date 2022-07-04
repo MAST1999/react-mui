@@ -19,10 +19,11 @@ const StyledHeader = styled("header")(
       display: grid;
       grid-template-columns: .5fr 1fr .5fr;
       grid-template-rows: 1fr;
-      height: 80px;
+      height: 90px;
       justify-content: center;
       align-items: center;
       padding: ${theme.spacing(2)};
+      background-color: ${theme.palette.grey[300]};
     `
 );
 

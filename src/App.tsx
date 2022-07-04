@@ -22,8 +22,10 @@ function App() {
         direction={"row"}
         spacing={3}
         justifyContent="center"
+        paddingTop={2}
         sx={{
           height: "90vh",
+          background: (theme) => theme.palette.grey[200],
         }}
       >
         {todoListJSX}

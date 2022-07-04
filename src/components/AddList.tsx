@@ -27,8 +27,10 @@ const AddList = () => {
       <Button
         variant="contained"
         onClick={() => {
-          dispatch(createList(newList));
-          setNewList("");
+          if (newList !== "") {
+            dispatch(createList(newList));
+            setNewList("");
+          }
         }}
       >
         Add new list

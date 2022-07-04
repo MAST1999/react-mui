@@ -45,7 +45,7 @@ export const updateList = (
 export type CreateTodoAction = ReturnType<typeof createTodo>;
 export type DeleteTodoAction = ReturnType<typeof deleteTodo>;
 export type UpdateTodoAction = ReturnType<typeof updateTodo>;
-export type CompleteTodoAction = ReturnType<typeof completeTodo>;
+export type CompleteTodoAction = ReturnType<typeof toggleTodo>;
 
 export type TodoActions =
   | CreateTodoAction
@@ -81,7 +81,7 @@ export const updateTodo = (
   payload: { listId, todoId, todoText },
 });
 
-export const completeTodo = (
+export const toggleTodo = (
   listId: ListId,
   todoId: TodoId
 ): { type: ToggleTodo; payload: { listId: ListId; todoId: TodoId } } => ({

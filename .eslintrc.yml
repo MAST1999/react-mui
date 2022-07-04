@@ -7,7 +7,7 @@ extends:
   - plugin:@typescript-eslint/recommended
   - plugin:react/jsx-runtime
   - prettier
-parser: '@typescript-eslint/parser'
+parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -15,5 +15,6 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-  - '@typescript-eslint'
-rules: {}
+  - "@typescript-eslint"
+  - "tss-unused-classes"
+rules: { "tss-unused-classes/unused-classes": "warn" }
